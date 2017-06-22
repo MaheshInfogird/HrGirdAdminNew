@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar_inner"/>
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:background="@color/GreyBgColor">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <Button
+                    android:id="@+id/btn_overview"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Overview"
+                    android:textSize="16sp"
+                    android:textColor="@color/RedTextColor"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn_hover"
+                    android:stateListAnimator="@null"/>
+                
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#cfcfcf">
+                </LinearLayout>
+                
+                <Button
+                    android:id="@+id/btn_holidays"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Holidays"
+                    android:textSize="16sp"
+                    android:textColor="@color/BlackTextColor"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btn"
+                    android:stateListAnimator="@null"/>
+            </LinearLayout>
+            
+            <FrameLayout
+                android:id="@+id/content_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"/>
+            
+        </LinearLayout>
+
+    </FrameLayout>
+    
+    <!--<ListView android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:divider="@android:color/transparent"
+        android:background="@color/GreyBgColor" />-->
+
+    <ExpandableListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/GreyBgColor"
+        android:choiceMode="singleChoice"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"/>
+
+</android.support.v4.widget.DrawerLayout>

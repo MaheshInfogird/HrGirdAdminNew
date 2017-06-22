@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/WhiteBgColor"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/txt_pendingaprv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mayur B Shinde"
+            android:textSize="11sp"
+            android:paddingRight="3dp"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/txt_pendingaprv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/string_one"
+            android:textSize="11sp"
+            android:paddingRight="2dp"
+            android:paddingLeft="3dp"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/txt_pendingaprv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Makar sankranti Programme at home"
+            android:textSize="11sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="3dp"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_pendingaprv_applyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_pendingaprv_leaveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_pendingaprv_uId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/txt_pendingaprv_cid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--View Icon-->
+            <LinearLayout
+                android:id="@+id/layout_pendingaprv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                
+                <ImageView
+                    android:id="@+id/img_pendingaprv"
+                    android:layout_width="20dp"
+                    android:layout_height="11dp"
+                    android:src="@drawable/view_icon"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                
+            </LinearLayout>
+            <!--View Icon-->
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

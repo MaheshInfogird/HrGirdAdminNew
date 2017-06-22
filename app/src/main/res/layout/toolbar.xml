@@ -1,0 +1,93 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_inner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/RedBgColor"
+    android:theme="@style/AppTheme"
+    local:popupTheme="@style/AppTheme"
+    local:theme="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/tool_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_arrow"
+        android:layout_gravity="start"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/WhiteTextColor"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="10dp"/>
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:textColor="@color/WhiteTextColor"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/img_logout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="right"
+        android:src="@drawable/logout_menu_icon"
+        android:layout_gravity="right"
+        android:paddingRight="25dp"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/tool_notification_layout0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bell_icon"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        ></LinearLayout>>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/tool_notification_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bell_icon"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        >
+    <LinearLayout
+        android:id="@+id/tool_notification_layout1"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:background="@drawable/notification_bg">
+        <TextView
+            android:id="@+id/tool_tv_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10sp"
+            android:textColor="@color/WhiteTextColor"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteBgColor"
+    android:paddingTop="10dp"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:id="@+id/layout_att_absent"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/att_list_sr_absent"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="11sp"
+        android:paddingRight="2dp"
+        android:textColor="@color/GreyTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_name_absent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="Mayur B. Shinde"
+        android:textSize="11sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/GreyTextColor"/>
+
+
+ <!--   <TextView
+        android:id="@+id/att_list_cid_absent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/GreyTextColor"/>
+-->
+    <TextView
+        android:id="@+id/att_list_stat_absent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:visibility="gone"
+        android:textColor="@color/GreyTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_dept_absent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:textColor="@color/GreyTextColor"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:id="@+id/att_list_st_layout_absent"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/present"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/att_list_status_absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textSize="11sp"
+                android:textColor="@color/WhiteTextColor"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

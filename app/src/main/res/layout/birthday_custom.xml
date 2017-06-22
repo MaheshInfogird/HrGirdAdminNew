@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/bd_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            
+            <TextView
+                android:id="@+id/bd_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prakash Parkhe"
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:textStyle="bold"/>
+            
+            <TextView
+                android:id="@+id/bd_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sr. Designer"
+                android:textSize="13sp"
+                android:textColor="@color/GreyTextColor"
+                android:layout_marginTop="5dp"/>
+            
+            <TextView
+                android:id="@+id/bd_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IT"
+                android:textSize="13sp"
+                android:textColor="@color/GreenTextColor"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/bd_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1991-08-31"
+                android:textSize="13sp"
+                android:textColor="@color/GreenTextColor"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:src="@drawable/birthday_icon"
+        android:layout_gravity="center"/>
+    
+</LinearLayout>

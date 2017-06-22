@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification"
+    android:orientation="vertical"
+    android:background="@color/BgColor">
+
+
+        <include layout="@layout/toolbar" android:id="@+id/toolbar_inner">
+
+        </include>
+
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ListView
+                    android:layout_width = "match_parent"
+                    android:layout_height = "wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:dividerHeight="10dp"
+                    android:divider="@color/WhiteBgColor"
+                    android:id="@+id/lv_notification"
+                >
+                </ListView>
+            </LinearLayout>>
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/sign_in_box"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/profile_photo_bg"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="10dp">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Mayur Shinde"
+               android:textSize="14sp"
+               android:textColor="@color/BlackTextColor"
+               android:textStyle="bold"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="and 3 others have marriage anniversary today !"
+               android:textSize="14sp"
+               android:textColor="@color/BlackTextColor"
+               android:textStyle="normal"/>
+       </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/sign_in_box"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/profile_photo_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mayur Shinde"
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="and 3 others have marriage anniversary today !"
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:textStyle="normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>-->
+
+        </ScrollView>
+ </LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/toolbar_inner"/>
+
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true"
+                android:layout_marginTop="56dp">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/BgColor"
+                    android:paddingTop="10dp"
+                    android:id="@+id/list_layout">
+
+                   <!-- <LinearLayout
+                        android:id="@+id/ll_date_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+                    </LinearLayout>-->
+
+                    <ListView
+                        android:layout_width = "match_parent"
+                        android:layout_height = "wrap_content"
+                        android:id="@+id/lv_postlist"
+                    ></ListView>
+
+
+                    <LinearLayout
+                        android:layout_width = "wrap_content"
+                        android:layout_height = "wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="10dp"
+                    android:visibility="gone">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SUBMIT"
+                            android:textColor="@color/WhiteTextColor"
+                            android:layout_gravity="bottom|center"
+                            android:background="@drawable/button"
+                            android:id="@+id/btn_post"/>
+                    </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/top_inner_menu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attendance Alert"
+            android:textSize="14sp"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:theme="@style/MySwitch"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/top_inner_menu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attendance Alert"
+            android:textSize="14sp"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch2"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:theme="@style/MySwitch"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/top_inner_menu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Attendance Alert"
+            android:textSize="14sp"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch3"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:theme="@style/MySwitch"/>
+    </LinearLayout>-->
+
+
+
+            </ScrollView>
+
+        </FrameLayout>
+
+    <!--<ListView android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:divider="@android:color/transparent"
+        android:background="@color/GreyBgColor" />-->
+
+    <ExpandableListView
+        android:id="@+id/list_slidermenu"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/GreyBgColor"
+        android:choiceMode="singleChoice"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"/>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/WhiteBgColor"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/txt_aprv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:text="Mayur B Shinde"
+            android:textSize="11sp"
+            android:paddingRight="3dp"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/txt_aprv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/string_one"
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/txt_aprv_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Makar sankranti Programme at home"
+            android:textSize="11sp"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_aprv_applyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_aprv_leaveType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_aprv_uId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_aprv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+
+        <TextView
+            android:id="@+id/txt_aprv_leaveDetailId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+        <TextView
+            android:id="@+id/txt_aprv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"/>
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:orientation="horizontal">
+            
+            <!--View Icon-->
+            <LinearLayout
+                android:id="@+id/layout_aprv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                
+                <ImageView
+                    android:id="@+id/img_aprv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/checked_approve_radio_btn"
+                    android:layout_marginTop="2dp"/>
+                
+            </LinearLayout>
+            <!--View Icon-->
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

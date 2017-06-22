@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Admin</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+    <string name="string_one">21 Jan 2017 \nto \n21 Jan 2017</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Dashboard</item>
+        <!-- <item>Registration</item>-->
+       <!-- <item>Leave</item>-->
+        <!--<item>Approved Leaves</item>-->
+        <!--<item>Pending Approvals</item>-->
+        <!--<item>Need To Review</item>-->
+        <item>Attendance</item>
+        <item>Events</item>
+        <!--<item>Switch to Attendance</item>-->
+        <item>Settings</item>
+        <!-- <item>Logout</item>-->
+        <!--<item>Need To Review</item>-->
+    </string-array>
+
+    <string-array name="nav_drawer_items_rm">
+        <item>Dashboard</item>
+        <!-- <item>Registration</item>-->
+  <!--      <item>Leave</item>-->
+
+        <!--<item>Approved Leaves</item>-->
+        <!--<item>Pending Approvals</item>-->
+        <item>Need To Review</item>
+        <item>Attendance</item>
+        <item>Events</item>
+        <!--<item>Switch to Attendance</item>-->
+        <item>Settings</item>
+        <!--  <item>Logout</item>-->
+        <!--<item>Need To Review</item>-->
+    </string-array>
+
+    <array name="nav_drawer_icons">
+        <item>@drawable/dashboard_icon</item>
+     <!--   <item>@drawable/leave_menu_icon</item>-->
+        <item>@drawable/leave_menu_icon</item>
+        <item>@drawable/approved_leave</item>
+        <item>@drawable/pending_approvals</item>
+        <item>@drawable/attendance_listing_icon</item>
+        <item>@drawable/settings_icon</item>
+        <item>@drawable/logout_icon</item>
+        <!--<item>@drawable/approved_leave</item>-->
+    </array>
+
+    <string-array name="dashboard">
+        <item></item>
+    </string-array>
+
+<!--    <string-array name="leaves">
+        <item></item>
+    </string-array>-->
+
+    <string-array name="events">
+        <item>Birthdays</item>
+        <item>Work Anniversaries</item>
+        <item>Marriage Anniversaries</item>
+    </string-array>
+
+    <string-array name="settings">
+        <item>Reset Password</item>
+        <item>Notification</item>
+        <item>Logout</item>
+    </string-array>
+
+
+    <string-array name="approved">
+        <item></item>
+    </string-array>
+
+    <string-array name="pending">
+        <item></item>
+    </string-array>
+
+    <string-array name="attListing">
+        <item>Daily</item>
+        <item>Absent</item>
+        <item>On Leave</item>
+        <item>Holidays</item>
+    </string-array>
+
+
+    <string-array name="logout">
+        <item></item>
+    </string-array>
+
+    <string-array name="need_review">
+        <item>Pending</item>
+        <item>Reviewed</item>
+    </string-array>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reject_popup_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteBgColor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello !"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/BlackTextColor"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please give the reason for Reject leave"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/BlackTextColor"/>
+
+    <EditText
+        android:id="@+id/popup_ed_reason"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Write reason"
+        android:textSize="13sp"
+        android:textCursorDrawable="@drawable/red_cursor"
+        android:textColorHint="@color/EditTextLabelsColor"
+        android:background="@drawable/edit_text_red"
+        android:textColor="@color/EditTextLabelsColor"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/popup_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Ok"
+            android:textSize="14sp"
+            android:textColor="@color/WhiteTextColor"
+            android:textAllCaps="true"
+            android:stateListAnimator="@null"
+            android:background="@drawable/login_button"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/popup_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:textSize="14sp"
+            android:textColor="@color/WhiteTextColor"
+            android:textAllCaps="true"
+            android:stateListAnimator="@null"
+            android:background="@drawable/login_button"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

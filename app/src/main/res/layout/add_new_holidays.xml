@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_inner"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/GreyBgColor" 
+            android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+            
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:orientation="vertical"
+            android:background="#f1f1f1">
+            
+            <AutoCompleteTextView
+                android:id="@+id/ac_holiday_year"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:hint="Select year"
+                android:textSize="13sp"
+                android:editable="false"
+                android:textColorHint="@color/WhiteTextColor"
+                android:textColor="@color/WhiteTextColor"
+                android:background="@drawable/edit_text_black"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:drawableRight="@drawable/calender_icon" />
+            </LinearLayout>
+            
+            </LinearLayout>
+            
+            <EditText
+                android:id="@+id/add_holiday_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Holiday Title"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/EditTextLabelsColor"
+                android:textColorHint="@color/EditTextLabelsColor"
+                android:background="@drawable/edit_text_red"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            
+            <TextView
+                android:id="@+id/add_holiday_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Date"
+                android:textSize="15sp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/EditTextLabelsColor"
+                android:textColorHint="@color/EditTextLabelsColor"
+                android:background="@drawable/edit_text_red"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:drawableRight="@drawable/calender_black_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"/>
+            
+            <EditText
+                android:id="@+id/add_holiday_description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Description"
+                android:textSize="15sp"
+                android:textColorHint="@color/EditTextLabelsColor"
+                android:background="@drawable/edit_text_red"
+                android:textColor="@color/EditTextLabelsColor"
+                android:singleLine="true"
+                android:paddingLeft="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"/>
+            
+            <AutoCompleteTextView
+                android:id="@+id/add_holiday_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Holiday Type"
+                android:textSize="15sp"
+                android:textColor="@color/EditTextLabelsColor"
+                android:textColorHint="@color/EditTextLabelsColor"
+                android:background="@drawable/edit_text_red"
+                android:drawableRight="@drawable/down_arrow_icon"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="20dp"
+                android:editable="false"
+                android:paddingRight="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"/>
+            
+            <Button
+                android:id="@+id/btn_add_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add Holiday"
+                android:textSize="14sp"
+                android:textColor="@color/WhiteTextColor"
+                android:textAllCaps="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:stateListAnimator="@null"
+                android:background="@drawable/login_button"/>
+            
+        </LinearLayout>
+        
+    </ScrollView>
+    
+</LinearLayout>

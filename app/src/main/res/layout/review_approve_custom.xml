@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/WhiteBgColor"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/rev_aprv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="21 Jan 2017"
+            android:textSize="13sp"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_onLeave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="0"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_leavetype"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="0"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/GreyTextColor"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_details_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/rev_aprv_leave_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:textColor="@color/GreyTextColor"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rev_apr_rdGrp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rev_rd_approve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/unchecked_approve_new"
+                    android:checked="false"
+                    android:enabled="true"
+                    android:layout_marginRight="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rev_rd_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="true"
+                    android:button="@drawable/unchecked_reject_new"
+                    android:checked="false"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rev_aprv_leavestatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="0"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/GreyTextColor"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

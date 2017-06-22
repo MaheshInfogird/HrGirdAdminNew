@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/WhiteBgColor"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/layout_att"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/att_list_sr"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:textSize="11sp"
+        android:paddingRight="2dp"
+        android:textColor="@color/GreyTextColor"/>
+    
+    <TextView
+        android:id="@+id/att_list_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="Mayur B. Shinde"
+        android:textSize="11sp"
+        android:paddingLeft="3dp"
+        android:paddingRight="2dp"
+        android:textColor="@color/FaintBlueTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_inTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:textColor="@color/GreyTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_outTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:textColor="@color/GreyTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_cid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:visibility="gone"
+        android:textColor="@color/GreyTextColor"/>
+
+    <TextView
+        android:id="@+id/att_list_stat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:visibility="gone"
+        android:textColor="@color/GreyTextColor"/>
+    
+    <TextView
+        android:id="@+id/att_list_dept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="00:00"
+        android:textSize="11sp"
+        android:visibility="gone"
+        android:textColor="@color/GreyTextColor"/>
+        
+        <TextView
+            android:id="@+id/att_list_workHr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10"
+            android:textSize="11sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/GreyTextColor"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:id="@+id/att_list_st_layout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/present"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/att_list_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"
+                android:textSize="11sp"
+                android:textColor="@color/WhiteTextColor"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

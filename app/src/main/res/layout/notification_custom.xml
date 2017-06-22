@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android = "http://schemas.android.com/apk/res/android"-->
+              <!--android:orientation = "vertical"-->
+              <!--android:layout_width = "match_parent"-->
+              <!--android:layout_height = "match_parent"-->
+              <!--android:background="@color/BgColor">-->
+
+
+    <LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/notification_box_bg"
+        android:padding="10dp"
+
+        >
+        <ImageView
+            android:id="@+id/noti_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/profile_photo_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/noti_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/noti_tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12sp"
+                android:textColor="@color/GreyTextColor"
+                android:gravity="right"
+                android:layout_marginTop="3dp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+<!--</LinearLayout>-->

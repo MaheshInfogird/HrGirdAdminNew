@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/GreyBgColor">
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/WhiteBgColor"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Holidays"
+                    android:textSize="16sp"
+                    android:textColor="@color/BlackTextColor"/>
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:orientation="vertical"
+                android:background="#f1f1f1">
+                
+                <AutoCompleteTextView
+                    android:id="@+id/ac_holiday_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:text="January"
+                    android:textSize="13sp"
+                    android:textColor="@color/WhiteTextColor"
+                    android:background="@drawable/edit_text_black"
+                    android:paddingLeft="5dp"
+                    android:editable="false"
+                    android:paddingRight="5dp"
+                    android:drawableRight="@drawable/calender_icon" />
+            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/holiday_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Holiday"
+            android:textSize="13sp"
+            android:textColor="@color/RedTextColor"
+            android:layout_marginTop="5dp"/>
+        
+        <!--Tbl Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bottom_border">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date"
+                    android:textSize="13sp"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/BlackTextColor"
+                    android:textStyle="bold"/>
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="Holidays"
+                    android:textSize="13sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/BlackTextColor"
+                    android:textStyle="bold"/>
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grant"
+                    android:textSize="13sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/BlackTextColor"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/txt_no_holidays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Holidays"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/InputTextColor"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/refresh_layout_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+            <ListView
+                android:id="@+id/holidays_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:longClickable="true"
+                android:visibility="gone"
+                android:divider="@color/GreyBgColor"/>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+            
+            <LinearLayout
+                android:id="@+id/holiday_Progress"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+                
+                <ProgressBar
+                    android:id="@+id/pbHeaderProgress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </ProgressBar>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        <!--Tbl End-->
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/edit_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shadows_top"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textSize="15sp"
+            android:textColor="@color/WhiteTextColor"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:background="@color/BlackTextColor"/>
+        
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#707070">
+        </LinearLayout>
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="15sp"
+            android:textColor="@color/WhiteTextColor"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"
+            android:background="@color/BlackTextColor"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/layout_addHoliday"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="8dp">
+        <!-- android:layout_above="@+id/edit_delete_layout"-->
+        
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add_icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+        
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbarCoordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

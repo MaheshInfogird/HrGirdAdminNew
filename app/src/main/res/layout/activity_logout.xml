@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:paddingBottom="20dp"
+    android:visibility="gone">
+    
+    <EditText
+        android:id="@+id/ed_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:textSize="14sp"
+        android:textColor="@color/InputTextColor"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp"
+        android:background="@drawable/inner_input_box"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+            
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Logout"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_button"/>
+    
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@color/GreyBgColor"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ic_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/dashboard_icon"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Booking"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/drawer_txt_clr"
+            android:layout_toRightOf="@+id/ic_txt"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ic_drop_down"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

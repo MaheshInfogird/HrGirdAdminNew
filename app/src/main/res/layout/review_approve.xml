@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/outer_layout"
+                android:background="@color/WhiteBgColor">
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar_inner"/>
+
+    <ScrollView
+        android:layout_below="@+id/toolbar_inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scroll_bar">
+
+        <RelativeLayout
+            android:id="@+id/RedBox"
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent"
+            android:layout_below="@+id/scroll_bar">
+
+            <LinearLayout
+                android:id="@+id/layout_tb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/WhiteBgColor"
+                android:padding="10dp"
+                android:paddingBottom="10dp">
+                <LinearLayout
+                    android:id="@+id/info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/leave_aprv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mayur B Shinde"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/BlackTextColor"/>
+
+                        <TextView
+                            android:id="@+id/leave_aprv_empid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="EMP ID : "
+                            android:textSize="13sp"
+                            android:textColor="@color/GreyTextColor"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/rev_aprv_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Leave Reason : "
+                            android:textSize="13sp"
+                            android:textColor="@color/GreyTextColor"
+                            android:layout_marginTop="10dp"
+                            android:paddingRight="5dp"/>
+
+                        <TextView
+                            android:id="@+id/rev_aprv_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Days : "
+                            android:textSize="13sp"
+                            android:textColor="@color/GreyTextColor"
+                            android:layout_marginTop="2dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/rev_aprv_start_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Leave Balance"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor" />
+
+                        <TextView
+                            android:id="@+id/rev_aprv_allowed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="leave"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/rev_aprv_taken"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Days"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/rev_aprv_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Days"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:layout_marginTop="2dp"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Tbl Start-->
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/bottom_border">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="Leave Date"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:text="On Leave"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:text="Session"
+                            android:textSize="13sp"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/BlackTextColor"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Action"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:text="Status"
+                            android:textSize="13sp"
+                            android:textColor="@color/BlackTextColor"
+                            android:textStyle="bold"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--Tbl End-->
+            </LinearLayout>
+
+
+            <ListView
+
+                android:layout_below="@+id/layout_tb1"
+                android:id="@+id/leave_approval_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0.5dp"
+                android:divider="@color/divider_color"
+                android:background="@color/WhiteBgColor"
+                android:scrollbars="none"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/GreyBox"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background="@color/WhiteBgColor"
+        android:layout_alignBottom="@+id/scroll_bar"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/lay_sing_out"
+            android:gravity="bottom">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/rev_aprv_submit"
+                android:text="Submit"
+                android:textSize="15sp"
+                android:textColor="@color/WhiteTextColor"
+                android:background="@drawable/login_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/lay_sing_out"
+            android:id="@+id/approve_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/black_border"
+            android:gravity="center"
+            android:layout_gravity="bottom">
+
+            <RadioButton
+                android:id="@+id/rd_approve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/unchecked_approve_new"
+                android:checked="false"/>
+
+            <TextView
+                android:id="@+id/approved_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Approve"
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <RadioButton
+                android:id="@+id/rd_reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/unchecked_reject_new"
+                android:checked="false"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/rejected_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"
+                android:textSize="14sp"
+                android:textColor="@color/BlackTextColor"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+    <!--</ScrollView>-->
